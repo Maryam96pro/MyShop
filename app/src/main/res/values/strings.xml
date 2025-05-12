@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyDigiKala_mac</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">خانه</string>
+    <string name="category">دسته بندی ها</string>
+    <string name="bascket">سبد حرید</string>
+    <string name="magnet">مگنت</string>
+    <string name="profile">دیجی کالای من</string>
+</resources>

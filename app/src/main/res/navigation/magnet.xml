@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/magnet"
+    app:startDestination="@id/magnetFragment">
+
+    <fragment
+        android:id="@+id/magnetFragment"
+        android:name="com.example.mydigikala_mac.View.Magnet.MagnetFragment"
+        android:label="fragment_magnet"
+        tools:layout="@layout/fragment_magnet" />
+</navigation>

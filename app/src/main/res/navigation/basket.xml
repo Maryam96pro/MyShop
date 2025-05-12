@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/basket"
+    app:startDestination="@id/bascketFragment">
+
+    <fragment
+        android:id="@+id/bascketFragment"
+        android:name="com.example.mydigikala_mac.View.Bascket.BascketFragment"
+        android:label="fragment_bascket"
+        tools:layout="@layout/fragment_bascket" />
+</navigation>
