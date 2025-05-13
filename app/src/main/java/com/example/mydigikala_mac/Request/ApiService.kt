@@ -29,7 +29,7 @@ interface ApiService {
 
 fun getApiClient(): ApiService {
     val retrofit = Retrofit.Builder()
-        .baseUrl("http://192.168.1.120/digikala/")
+        .baseUrl("http://192.168.1.35/Digikala_Project/")
         .addConverterFactory(GsonConverterFactory.create())
         .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
         .build()

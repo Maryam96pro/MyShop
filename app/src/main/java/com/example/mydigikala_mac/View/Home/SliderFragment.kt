@@ -44,6 +44,7 @@ class SliderFragment : Fragment() {
             return SliderFragment().apply {
                 arguments=Bundle().apply {
                     putParcelable("key",bannerModel)
+
                 }
             }
         }

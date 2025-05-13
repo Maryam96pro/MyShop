@@ -26,6 +26,7 @@ import com.example.mydigikala_mac.databinding.FragmentAllBinding
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import org.koin.core.parameter.parametersOf
 
 
 class AllFragment : Fragment() ,SetDetailItem{
@@ -104,9 +105,9 @@ class AllFragment : Fragment() ,SetDetailItem{
 
         homeViewModel.amazingLiveData.observe(viewLifecycleOwner){
            // Log.i("LOG", "OnViewAmazing: ${it.toString()}")
-            val myAdapter_Amazing :Adapter_Amazing by inject()
+            val myAdapter_Amazing :Adapter_Amazing by inject { parametersOf(it) }
             myAdapter_Amazing.detailShow(this)
-            myAdapter_Amazing.myAmazing= it as ArrayList<AmazingModel>
+            //myAdapter_Amazing.myAmazing= it as ArrayList<AmazingModel>
             binding.rvAllAmazing.adapter=myAdapter_Amazing
         }
 

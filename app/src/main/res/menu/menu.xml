@@ -11,7 +11,7 @@
     <item
         android:id="@+id/basket"
         android:icon="@drawable/baseline_shopping_cart_24"
-        android:title="" />
+        android:title="@string/basket" />
     <item
         android:id="@+id/magnet"
         android:icon="@drawable/baseline_pages_24"

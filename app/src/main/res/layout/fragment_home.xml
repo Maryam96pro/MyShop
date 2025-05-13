@@ -3,29 +3,22 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="15dp"
+    android:padding="7dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.Home.HomeFragment">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_home_myshop"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
         android:drawableLeft="@drawable/baseline_camera_alt_24"
         android:drawableRight="@drawable/baseline_search_24"
         android:hint=" جستجو در دیجی کالا"
-        app:layout_constraintEnd_toEndOf="@+id/rv_home_myshop"
-        app:layout_constraintTop_toBottomOf="@+id/rv_home_myshop" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <ImageView

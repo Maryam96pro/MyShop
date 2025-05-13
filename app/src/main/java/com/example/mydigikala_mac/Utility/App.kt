@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.mydigikala_mac.Adapter.Adapter_Amazing
 import com.example.mydigikala_mac.Adapter.Adapter_Cat
+import com.example.mydigikala_mac.Data.AmazingModel
 import com.example.mydigikala_mac.Detail.DataSource.RemoteDetailDataSource
 import com.example.mydigikala_mac.Detail.Repository.DetailRepository
 import com.example.mydigikala_mac.Detail.Repository.DetailRepositoryImpl
@@ -44,7 +45,7 @@ class App : Application() {
             factory { Adapter_Cat(get()) }
 
             factory <AmazingRepository>{ AmazingRepositoryImpl(RemoteAmazingDataSource(get())) }
-            factory { Adapter_Amazing(get()) }
+            factory { (myAmazing :List<AmazingModel>)-> Adapter_Amazing(get(),myAmazing ) }
 
             factory <DetailRepository>{ DetailRepositoryImpl(RemoteDetailDataSource(get())) }
 
